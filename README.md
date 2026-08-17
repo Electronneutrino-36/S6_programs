@@ -15,5 +15,18 @@ arbitrary $n$ with $n$ even.
 
 ## Explicitly construct the representations of the multiplets
 The Mathematica file `explicit_multiplet_construction.nb` collects all the 
-cosets and constructs the explicit representations for the $S_6$ 
-(anti)multiplets.
+cosets into plaquette variables $\pi$ 
+and constructs the explicit representations for the $S_6$ 
+(anti)multiplets. <br>
+In the folder `Sn/S6/matrices/` are the collected matrices $a_i$ needed 
+for the explicit construction of a given multiplet $M_j = \sum_i a_i X_i$, where 
+$X_i$ are a combination of the plaquettes $\pi$. 
+The permutations to be applied to the ordering of the 
+plaquettes $\pi$ on the Chessboard Planes (CPs) 
+for a specific multiplet $M_j$ are collected in `Change_M_j.mx` 
+and the corresponding powers of the 
+rotation matrix in `R_j.mx`. <br> 
+For the 16-plet, one additionally needs 
+transformations applied to the plaquettes, which are collected in 
+`replacements_1_2_lc.mx`, `replacements_5_6_lc.mx`, `replacements_10_11_lc.mx`, 
+`replacements_13_14_lc.mx`.
