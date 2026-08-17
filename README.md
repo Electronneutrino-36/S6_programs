@@ -29,4 +29,4 @@ rotation matrix in `R_j.mx`. <br>
 For the 16-plet, one additionally needs 
 transformations applied to the plaquettes, which are collected in 
 `replacements_1_2_lc.mx`, `replacements_5_6_lc.mx`, `replacements_10_11_lc.mx`, 
-`replacements_13_14_lc.mx`.
+`replacements_13_14_lc.mx`. 
