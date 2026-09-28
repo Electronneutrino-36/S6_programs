@@ -10,7 +10,7 @@ import os
 # --------------------------------------------------------------------------- #
 #                    Load helper functions                                    #
 # --------------------------------------------------------------------------- #
-from src.sn_matrices.young_functions import *       
+from src.young_functions import *       
 
 # --------------------------------------------------------------------------- #
 #               Create folders to store resulting matrices                    #

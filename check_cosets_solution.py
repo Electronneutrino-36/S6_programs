@@ -9,7 +9,8 @@ from multiprocessing import freeze_support
 sys.setrecursionlimit(1000) 
 import sympy as sp
 
-from iteration_functions import *
+# --- load the helper file with the function definitions --- #
+from src.iteration_functions import *
 
 
 n = 6
