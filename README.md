@@ -4,17 +4,21 @@ Algorithmic determination of
 the explicit matrices for the irreducible representations of $S_6$ using the 
 `Sn_matrices.py` script. <br> 
 All the functions needed for this are collected in 
-`young_functions.py`. <br>
+`src/young_functions.py`. <br>
 The default is set to $n=6$, but it works for arbitrary $n$.
 
 ## Determine the cosets of $S_n$ elements
-The program `cosets_Sn.py` automatically determines the cosets of 
+The program `determine_cosets_Sn.py` automatically determines the cosets of 
 $S_n$ with respect to the dihedral group $D_4$ using `SymPy`. <br>
 Also here, the default is set to $n=6$, but the program works for 
-arbitrary $n$ with $n$ even.
+arbitrary $n$ with $n$ even. <br>
+To check if the determined cosets are an exact cover for the permutation 
+group $S_n$, one can use the program `check_cosets_solution.py`. This uses 
+the Dancing Links (DLX) algorithm of Donald Knuth [see here](https://arxiv.org/abs/cs/0011047) 
+to determine the solution to the exact cover problem.
 
 ## Explicitly construct the representations of the multiplets
-The Mathematica file `explicit_multiplet_construction.nb` collects all the 
+The Mathematica file `Multiplet_construction.nb` collects all the 
 cosets into plaquette variables $\pi$ 
 and constructs the explicit representations for the $S_6$ 
 (anti)multiplets. <br>
