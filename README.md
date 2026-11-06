@@ -47,4 +47,12 @@ to determine the solution to the exact cover problem.
 The Mathematica file `Multiplet_construction.nb` collects all the 
 cosets into plaquette variables $\pi$ 
 and constructs the explicit representations for the $S_6$ 
-(anti)multiplets as outlined in the corresponding publication. 
+(anti)multiplets as outlined in the corresponding publication. <br>
+The constructed multiplets can then be checked against an explicit 
+solution of the $T\mathcal{M} = \mathbf{T}_{\mathcal{M}}^T \mathcal{M}$ and 
+$C\mathcal{M} = \mathbf{C}_{\mathcal{M}}^T \mathcal{M}$ system of equations, 
+with $T$ and $C$ denoting the transposition $(12)$ and cyclic permutation 
+$(123456)$ and the bold symbols are the corresponding representation 
+matrices as obtained from the `Sn_matrices.py` script. The explicit solutions 
+for a given (anti)multiplet are stored in the corresponding `S6/matrices/mu` 
+folder.
