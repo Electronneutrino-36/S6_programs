@@ -218,8 +218,8 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Generated matrices
-./S6/matrices/*.txt
+S6/matrices/**/*.txt
 
 # Generated .json file
-./S6/*.json
-./S6/*.txt
+S6/*.json
+S6/*.txt
