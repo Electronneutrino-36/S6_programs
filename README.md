@@ -17,7 +17,9 @@ runs for any $n$ (given enough computing power).
 under the dihedral subgroup $D_4$ by running `python3 determine_cosets_Sn.py`. 
 This, however, currently only works for even $n$, since odd $n$ do not 
 display the $D_4$ subgroup structure.
-4. 
+4. Run the Mathematica script `Multiplet_construction.nb` to construct  
+the explicit form of the multiplet as described in the publication. This 
+can only be done for $S_6$ up to now.
 
 ## Explicit transformation matrices for $S_n$ irreducible representations
 Algorithmic determination of 
