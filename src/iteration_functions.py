@@ -3,9 +3,7 @@ from itertools import permutations
 from functools import partial
 import sys
 from src.helper_functions import *
-import multiprocessing
 from sympy.combinatorics import Permutation
-from multiprocessing import Pool, cpu_count, Process, Manager
 import json
 import time
 import numpy as np
@@ -1218,6 +1216,7 @@ def check_sympy_solution(_n):
     # --- Determine and write the permutation subclasses. --- #
     print("Determining subclasses...\n")
     _subclass_shape, _subclass_shape_T = determine_subclasses_sympy_solution(data_array)
+    print(f"Writing subclasses to S{_n:.0f}/subclasses_sympy.txt ...\n")
     write_perms(_subclass_shape,"S{:.0f}/subclasses_sympy.txt".format(_n))
     write_perms(_subclass_shape_T,"S{:.0f}/subclasses_sympy_T.txt".format(_n))
 

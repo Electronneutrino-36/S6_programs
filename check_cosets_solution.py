@@ -19,7 +19,7 @@ determine_everything(n,shape_cycles,"")
 check_sympy_solution(n)
 
 
-# check if the produced index lists are the same
+# --- Check if the produced index lists are the same --- #
 with open('S{}/associated_permutation.json'.format(n), 'r') as file:
     sol_s6_normal = json.load(file)
 
@@ -40,7 +40,7 @@ true_check = all(x == True for x in true_array)
 print("All permutations match: ",true_check)
 
 
-
+# --- Check the native determined solution with the one from sympys group theory script --- #
 with open('S{:.0f}/ngons.json'.format(n), 'r') as file:
     ngons_normal = json.load(file)
 

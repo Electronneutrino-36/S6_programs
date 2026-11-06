@@ -5,7 +5,6 @@ import numpy as np
 import math
 from numpy.linalg import multi_dot
 import sympy as sp
-import pickle
 
 def calc_dim(dia):
     '''
@@ -295,12 +294,6 @@ def write_matrix(matrix,name):
         if i <= len(matrix)-2:
             matrixfile.write("\n")
     matrixfile.close()
-
-    # ---------------------------------------------------------------- # 
-    #                 Also write it as a pickle file                   #
-    # ---------------------------------------------------------------- # 
-    with open(name[:-3]+"pickle", 'wb') as outf:
-        outf.write(pickle.dumps(matrix))
 
 
 def ordertest(A):
